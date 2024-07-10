@@ -1,0 +1,81 @@
+.setting__detail__item__wrapper {
+    .setting__detail__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .setting__detail__item__user__img {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url("https://t4.ftcdn.net/jpg/01/07/57/91/360_F_107579101_QVlTG43Fwg9Q6ggwF436MPIBTVpaKKtb.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            cursor: pointer;
+        }
+    }
+
+    .setting__detail__item__list {
+        .setting__detail__item__item {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding: 12px 0;
+
+            .setting__detail__item__title {
+                font-size: 15px;
+                min-width: 164px;
+            }
+
+            .setting__detail__item__info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex: 1;
+
+                .setting__detail__item__current__info__input__wrapper {
+                    width: 100%;
+
+                    .setting__detail__item__current__info__input {
+                        width: 96%;
+                        padding: 2px 6px;
+                        font-size: 14px;
+                    }
+                }
+
+
+                .setting__detail__item__current__info {
+                    font-size: 13px;
+                    color: #555;
+                }
+
+                .setting__detail__item__action {
+                    padding: 4px 6px;
+                    cursor: pointer;
+                    color: #006ce4;
+                    font-size: 15px;
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            &:last-child {
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+    }
+}

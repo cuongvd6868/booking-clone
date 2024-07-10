@@ -1,0 +1,221 @@
+.hotel__result__item__wrapper {
+    padding: 16px;
+    margin: 16px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+
+    &:hover {
+        border-color: #a3d7fc;
+        box-shadow: 0 0 8px #a3d7fc;
+        background-color: #f0f6ff;
+        scale: 1.002;
+    }
+
+    .hri__img__wrapper {
+        position: relative;
+
+        .hri__img {
+            width: 240px;
+            height: 240px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .hri__img__icon {
+            padding: 6px;
+            background: #fff;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f2f2f2;
+            }
+
+            &:focus-within {
+                .hri__heart__icon {
+                    fill: red;
+                }
+            }
+        }
+    }
+
+    .hri__overview {
+        display: flex;
+        justify-content: space-between;
+
+        .hri__title__star {
+            display: flex;
+            align-items: center;
+
+            .hri__title__wrapper {
+                text-decoration: none;
+                color: var(--text-hover-color);
+                font-weight: 700;
+                text-decoration: none;
+                padding-right: 6px;
+                
+                .hri__title {
+                    font-size: 19px;
+                    font-weight: 600;
+                }
+    
+                &:hover {
+                    color: var(--text-color);
+                }
+            }
+        }
+
+        .hri__location {
+            font-size: 12px;
+            margin-top: 6px;
+
+            .hri__location__link {
+                color: var(--text-hover-color);
+                font-size: 13px;
+                font-weight: 500;
+                position: relative;
+                margin-right: 12px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    right: -7px;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #b08282;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .hri__evaluate {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .hri__evaluate__reviews {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                
+                .hri__evaluate__comfort {
+                    float: right;
+                    font-size: 14px;
+                    color: var(--text-hover-color);
+                    font-weight: 600;
+                    margin: 4px 0;
+                    cursor: pointer;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+            .hri__evaluate__link {
+                border: none;
+                outline: none;
+                font-size: 12px;
+                color: #242424;
+                background-color: #ffb700;
+                padding: 2px 6px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .hri__free__taxi {
+        border: none;
+        outline: none;
+        font-size: 12px;
+        padding: 2px 6px;
+        color: #fff;
+        background-color: #008234;
+        border-radius: 4px;
+        margin: 10px 0;
+    }
+
+    .hri__detail {
+        display: flex;
+        justify-content: space-between;
+
+        .hri__detail__convenient {
+            flex: 1;
+
+            .hri__convenient__room {
+                font-size: 12px;
+                color: var(--text-color);
+                font-weight: 600;
+            }
+
+            .hri__convenient__beds {
+                font-size: 12px;
+                color: var(--text-color);
+            }
+
+            .hri__detail__benefit {
+                font-size: 12px;
+                color: #008234;
+                display: flex;
+                align-items: center;
+
+                .hri__detail__benefit__bold {
+                    font-weight: 600;
+                    margin-left: 8px;
+                }
+            }
+
+            .hri__detail__room__left {
+                color: #d4111e;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+        .hri__value {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .hri__value__desc {
+                color: #595959;
+                font-size: 12px;
+            }
+
+            .hri__value__money {
+                font-size: 20px;
+            }
+
+            .hri__see__availability {
+                display: flex;
+                align-items: center;
+                margin: 8px 0;
+                background-color: #006ce4;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                font-weight: 400;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0057b8;
+                }
+
+                p {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
